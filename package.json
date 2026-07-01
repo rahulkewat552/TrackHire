@@ -1,0 +1,50 @@
+{
+  "name": "mern-jobify-final",
+  "version": "1.0.0",
+  "description": "mern stack job tracker app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "setup-production": "npm run install-client && npm run build-client && npm install",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "server": "nodemon server --ignore client",
+    "client": "npm start --prefix client",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharinLana/mern-stack-job-tracker.git"
+  },
+  "author": "Svetlana Sharina (aka Lana Sharin)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharinLana/mern-stack-job-tracker/issues"
+  },
+  "homepage": "https://github.com/SharinLana/mern-stack-job-tracker#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.1",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongodb": "^7.4.0",
+    "mongoose": "^7.0.2",
+    "morgan": "^1.10.0",
+    "validator": "^13.9.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^3.1.14"
+  }
+}
