@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #39b6e053;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap");
+
+/* fonts  */
+:root {
+  --headingFont: "Roboto Condensed", Sans-Serif;
+  --bodyFont: "Cabin", Sans-Serif;
+}
+
+main {
+  width: 100%;
+}
+
+p {
+  font-family: var(--bodyFont);
+  color: #2e2e41;
+}
+
+a {
+  font-family: var(--headingFont);
+  text-decoration: none;
+  color: #39b5e0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--headingFont);
+  color: #2e2e41;
+}
+
+img {
+  width: 100%;
+}
+
+label,
+input {
+  font-family: var(--bodyFont);
+  color: #2e2e41;
+}
+
+button {
+  font-family: var(--headingFont);
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out all;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid #829ab1;
+  border-radius: 50%;
+  border-top-color: #2cb1bc;
+  animation: spinner 2s linear infinite;
+}
