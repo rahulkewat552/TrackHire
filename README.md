@@ -58,7 +58,6 @@ npm run dev
 
 👨‍💻 Author
 Rahul Kewat
-GitHub · LinkedIn · kewatrahul861@gmail.com
 
 📄 License
 MIT
