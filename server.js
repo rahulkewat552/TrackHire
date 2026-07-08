@@ -64,6 +64,11 @@ app.use(mongoSanitize());
 // Route middleware
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/jobs", authVerification, jobRoutes);
+
+// ✅ ADD THIS CATCHALL ROUTE
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+});
 app.use(errorHandler);
 app.use(notFound);
 
