@@ -10,18 +10,20 @@
     "build-client": "cd client && npm run build",
     "server": "nodemon server --ignore client",
     "client": "npm start --prefix client",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "render-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SharinLana/mern-stack-job-tracker.git"
+    "url": "git+https://github.com/rahulkewat552/TrackHire.git"
   },
-  "author": "Svetlana Sharina (aka Lana Sharin)",
+  "author": "Rahul Kewat",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SharinLana/mern-stack-job-tracker/issues"
+    "url": "https://github.com/rahulkewat552/TrackHire/issues"
   },
-  "homepage": "https://github.com/SharinLana/mern-stack-job-tracker#readme",
+  "homepage": "https://github.com/rahulkewat552/TrackHire#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
