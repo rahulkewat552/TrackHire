@@ -22,7 +22,7 @@
 ## 🛠️ Tech Stack
 
 **Frontend:** React, React Router, Context API, styled-components, Recharts  
-**Backend:** Node.js, Express, MongoDB, Mongoose, JWT  
+**Backend:** Node.js, Express, MongoDB, Mongoose, JWT
 **Deployment:** Render
 
 ---
