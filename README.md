@@ -27,7 +27,12 @@
 
 ---
 
+
+
 ## 📁 Structure
+
+
+
 TrackHire/
 ├── client/ # React frontend
 ├── controllers/ # API controllers
