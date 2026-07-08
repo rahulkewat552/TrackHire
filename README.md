@@ -29,19 +29,18 @@
 
 
 
-## 📁 Structure
+## Structure
 
-
-
+```
 TrackHire/
-├── client/ # React frontend
-├── controllers/ # API controllers
-├── models/ # MongoDB models
-├── routes/ # API routes
-├── middleware/ # Auth & error handling
-├── utils/ # Helpers
-└── server.js # Entry point
-
+├── client/          # React frontend
+├── controllers/     # API controllers
+├── models/          # MongoDB models
+├── routes/          # API routes
+├── middleware/      # Auth & error handling
+├── utils/           # Helpers
+└── server.js        # Entry point
+```
 
 
 ---
